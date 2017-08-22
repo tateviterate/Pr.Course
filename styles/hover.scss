@@ -1,0 +1,66 @@
+//
+// Hover css
+//................................
+
+.area .right-block .full-links ul li:hover {
+	background: #292f38;
+	color: #ffffff;
+}
+
+.area .right-block .full-links ul li:hover > a {
+	color: #ffffff;
+}
+
+.area .right-block .top-block a.logout-btn:hover {
+	background-position: 0 -37px;
+}
+
+
+header .all .block-right ul li a:hover{
+
+	color:#0a2c4b;
+	border-bottom: 10px solid #0a2c4b;
+}
+
+
+
+header .links .sign:hover{
+
+	color: #0a2c4b;
+	font-weight: bold;
+}
+
+header .links .sign:hover i{
+
+	border: 1px solid #0a2c4b;
+	border-radius: 50%;
+	padding: 5px;
+	margin-left: 3px;
+}
+
+
+
+header .links .search:hover{
+
+	color: #0a2c4b;
+	font-weight: bold;
+}
+
+header .links .search:hover i{
+
+	border: 1px solid #0a2c4b;
+	border-radius: 50%;
+	padding: 5px;
+	margin-left: 3px;
+}
+
+section button:hover{
+
+	border: 1px solid #fdfcfc;
+
+}
+
+section .block-info .info-content button:hover{
+	border: 1px solid #fdfcfc;
+
+}

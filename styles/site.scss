@@ -1,0 +1,503 @@
+//
+// Site css
+// --------------------------------------------
+
+html, body {
+	margin: 0 !important;
+	height: 100%;
+	//height: 100%;
+
+
+}
+
+header{
+
+	.links{
+		height: 77px;
+		position: relative;
+		left: 68.6%;
+		padding-top: 29px;
+
+		a{
+			text-decoration: none;
+
+			font-size:13px;
+
+
+		}
+
+
+		.sign{
+			color: #fafcfd;
+			font-family: MicrosoftPhagsPa;
+
+			img{
+				margin-left: 10px;
+			}
+			i{
+				font-size: 19px;
+				padding-left: 3px;
+			}
+		}
+
+		.search{
+			color: #fafcfd;
+			font-family: MicrosoftPhagsPa;
+			margin-left: 10px;
+
+			i{
+				font-size: 19px;
+
+			}
+
+
+		}
+
+
+
+
+}
+	.all {
+		height: 140px;
+		position: relative;
+		@include clear();
+
+
+		.block-left {
+			background: #0a2c4b;
+			height: 100%;
+			width: 40.73%;
+			float: left;
+			text-align: center;
+
+			img{
+
+				position: relative;
+				max-width: 100%;
+				max-height: 100%;
+				left: 15%;
+				top: 16px;
+			}
+		}
+
+		.center-image-block {
+			display: none;
+		}
+
+		.block-right {
+			width: 59.27%;
+			height: 100%;
+			float: right;
+			background-image: url(../images/header-image.png);
+			background-position: center left;
+			background-repeat: no-repeat;
+			background-size: auto 100%;
+			padding: 0 0 0 15px;
+
+
+
+			ul {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
+
+
+
+				li {
+					float: left;
+
+				a {
+					display: inline-block;
+					color:#606060;
+					font-family: MicrosoftPhagsPa-Bold;
+					font-size: 22px;
+					text-align: center;
+					text-decoration: none;
+					padding: 70px 70px 38px 70px;
+				}
+
+
+				}
+			}
+
+		}
+	}
+
+
+
+
+
+
+
+}
+
+
+section {
+	.background-block {
+		width: 100%;
+		height: 890px;
+		background-image: url("../images/Header-background.png");
+		background-size: 100% 100%;
+		position: absolute;
+		top: 0;
+		z-index: -1;
+
+	}
+
+
+	.header-content{
+		margin: 0 auto;
+		text-align: center;
+		background: rgba(10,44,75,.4);
+		width: 49.5%;
+		height: 180px;
+		margin-top: 12%;
+		padding-top: 40px;
+
+		h1{
+			font-family: MicrosoftNewTaiLue-Bold;
+			font-size:60px;
+			color: #fcfdfd;
+
+		}
+
+		p{
+			font-family: Arial;
+			font-size:25px;
+			color: #e5e5e5;
+			padding-top: 20px;
+		}
+
+
+	}
+	button{
+		width: 237px;
+		height: 65px;
+		background: #fda220;
+		border: 1px solid #fda220;
+		border-radius: 10px;
+		position: relative;
+		left: 44.3%;
+		top: 14px;
+		font-family: Arial;
+		font-size:25px;
+		color: #fdfcfc;
+		font-weight:bold ;
+		cursor:pointer;
+
+	}
+
+
+	.block-welcome{
+	margin-top: 10.5%;
+	height: 670px;
+
+	div{
+		float: left;
+	}
+
+
+	.content-welcome{
+		position: relative;
+		background-image: url("../images/Welcome-grey.png");
+		width: 61.5%;
+		height: 100%;
+
+		.welcome-text-block {
+			margin-left: 27.3%;
+
+
+			h2 {
+				font-size: 86px;
+				font-family: MicrosoftNewTaiLue-Bold;
+				color: #5a5959;
+				padding-top: 70px;
+
+				img {
+					position: absolute;
+					z-index: -1;
+					top: 11.1%;
+
+					left: 26.5%;
+					height: 61px;
+				}
+			}
+			h3{
+				font-size:40px;
+				font-family: MicrosoftPhagsPa-Bold;
+				color: #838282;
+				border-bottom: 4px solid #ebebeb;
+				width: 570px;
+				padding: 0 0 20px 25px;
+			}
+			h4{
+
+				font-size: 30.43px;
+				font-family: MicrosoftPhagsPa;
+				color: #838282;
+				padding: 20px 0 30px 25px;
+				span{
+					color: #fda220;
+
+
+				}
+
+			}
+			p{
+				font-family: MicrosoftPhagsPa;
+				font-size:25px;
+				color: #b7b6b6;
+				width: 65.6%;
+				line-height: 1.3;
+				padding-left: 25px;
+			}
+		}
+	}
+
+	.img-welcome{
+
+		padding-top: 43px;
+
+		img{
+			max-width: 100%;
+			max-height: 100%;
+		}
+	}
+
+
+}
+	.block-info{
+
+		width: 100%;
+		height: 455px;
+		background: #daedfe;
+		padding-left: 16.8%;
+		box-shadow: 0px 4px 10px lightgray;
+		z-index: 1;
+		position: relative;
+
+		div{
+
+
+		}
+
+		.info-img{
+			float: left;
+
+			img{
+				max-width: 100%;
+				max-height: 100%;
+				margin-top: 33px;
+				border:5px solid #ffffff;
+
+			}
+		}
+
+		.info-content{
+			float: left;
+			width: 51.6%;
+			margin: 54px 0 0 86px;
+			height: 100%;
+
+
+			h2{
+				font-family: MicrosoftNewTaiLue;
+				font-size:50px;
+				color: #3d3c3c;
+				margin-left: 36%;
+				letter-spacing: 9px;
+
+			}
+
+			p{
+				font-family: Constantia;
+				font-size:24px;
+				color: #767676;
+				font-weight: 500;
+				padding-top: 23px;
+				line-height: 1.5;
+				text-align: justify;
+			}
+
+			button{
+
+				width: 166px;
+				height: 66px;
+				background: #0a2c4b;
+				border: 1px solid transparent;
+				border-radius: 10px;
+				text-align: center;
+				font-size:26px;
+				margin-left: 35.5%;
+				margin-bottom: 60px;
+			}
+
+
+		}
+	}
+	.block-courses{
+		width: 100%;
+		height: 600px;
+		background-image: url("../images/background.jpg");
+		position: relative;
+
+		a{
+			text-decoration: none;
+			font-size:40px;
+			font-family: MicrosoftNewTaiLue-Bold;
+			color: #344046;
+			position: absolute;
+			left: 16.6%;
+			top: 16.6%;
+			cursor: pointer;
+
+
+		}
+
+
+		.hide-block{
+			width: 100%;
+			height: 200px;
+			background: rgba(235,235,235,.6);
+			position: relative;
+			top:170px;
+			display: none;
+          .hide-block-content{
+			div{
+				width: 415px;
+				height: 128px;
+				position: relative;
+				float: left;
+				background: #344046;
+				bottom: 17px;
+				margin-left: 15px;
+
+
+				p{
+					position: absolute;
+					top:28px;
+					left:29%;
+					font-family:Arial;
+					color: #e5e5e5;
+
+				}
+
+				h3{
+					position: absolute;
+					top:64px;
+					left:29%;
+					font-family:Arial;
+					font-size:29px;
+					color: #e5e5e5;
+
+
+					span{
+						background: #53fd77;
+						border:1px solid transparent;
+						border-radius: 10px;
+						font-size:14px;
+						color: #fffefe;
+						font-family: MicrosoftPhagsPa;
+						padding: 0px 12px;
+						margin-left: 30px;
+					}
+
+				}
+				img{
+					top:26px;
+					left: 35px;
+					position: relative;
+				}
+
+				a{
+					display: inline-block;
+					position: absolute;
+					width: 59px;
+					height: 100%;
+					background: #0a2c4b;
+					color: #fcfcfb;
+					left: 86%;
+					top: 0px;
+
+
+					i{
+						margin: 21px 0 0 17px;
+					}
+
+
+				}
+
+
+			}
+
+		.video{
+			margin-left: 16.8%;
+			span{
+				margin-left: 50px;
+			}
+
+
+		}
+
+}
+		}
+
+
+		.courses-button{
+
+			position: relative;
+			top: 190px;
+			button{
+				position: absolute;
+				z-index: 10;
+
+			}
+		}
+
+
+
+
+
+	}
+
+}
+
+
+footer{
+	width: 100%;
+	height: 72px;
+	background: #0a2c4b;
+	text-align: center;
+
+	.footer-links{
+		position: relative;
+		top: 20px;
+
+		a{
+			text-decoration: none;
+			font-family: MicrosoftPhagsPa;
+			font-size:14px;
+			color: #fdfcfc;
+			border-left: 1px solid #fdfcfc;
+			padding: 0 5px;
+
+		}
+
+		.no-border{
+			border: none;
+		}
+
+
+	}
+
+
+	p{
+		font-family: MicrosoftPhagsPa;
+		font-size:12px;
+		color: #b7b6b6;
+		margin-top: 30px;
+	}
+}
+
+

@@ -1,0 +1,589 @@
+a, abbr, acronym, address, applet, article, aside, audio, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+  outline: 0 !important;
+}
+
+* {
+  -webkit-text-size-adjust: auto !important;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+a {
+  border: 0;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  line-height: 1;
+  word-wrap: break-word;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:after, blockquote:before, q:after, q:before {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input[type="text"], input[type="submit"], textarea {
+  outline: 0 !important;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0;
+}
+
+:focus {
+  outline-color: transparent;
+  outline-style: none;
+}
+
+*, :after, :before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.clear {
+  clear: both !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  height: 0 !important;
+  width: 0 !important;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/*input[type=text], input[type=email], input[type=password], input[type=number], textarea {
+	&::-webkit-input-placeholder {
+		opacity: 1;
+		color: #74421c;
+	}
+	&:-moz-placeholder {
+		opacity: 1;
+		color: #74421c;
+	}
+	&::-moz-placeholder {
+		opacity: 1;
+		color: #74421c;
+	}
+	&:-ms-input-placeholder {
+		opacity: 1;
+		color: #74421c;
+	}
+}
+
+
+input.error {
+	color: #D9272E !important;
+
+	&::-webkit-input-placeholder {
+		color: #D9272E !important;
+	}
+	&:-moz-placeholder {
+		color: #D9272E !important;
+		opacity: 1;
+	}
+	&::-moz-placeholder {
+		color: #D9272E !important;
+		opacity: 1;
+	}
+	&:-ms-input-placeholder {
+		color: #D9272E !important;
+	}
+}
+ */
+/*
+	cdCss functions
+	--------------------
+*/
+@font-face {
+  font-family: 'MicrosoftPhagsPa-Bold';
+  src: url("../fonts/MicrosoftPhagsPa-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/MicrosoftPhagsPa-Bold.woff") format("woff"), url("../fonts/MicrosoftPhagsPa-Bold.ttf") format("truetype"), url("../fonts/MicrosoftPhagsPa-Bold.svg#MicrosoftPhagsPa-Bold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MicrosoftPhagsPa';
+  src: url("../fonts/MicrosoftPhagsPa.eot?#iefix") format("embedded-opentype"), url("../fonts/MicrosoftPhagsPa.woff") format("woff"), url("../fonts/MicrosoftPhagsPa.ttf") format("truetype"), url("../fonts/MicrosoftPhagsPa.svg#MicrosoftPhagsPa") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MicrosoftNewTaiLue-Bold';
+  src: url("../fonts/MicrosoftNewTaiLue-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/MicrosoftNewTaiLue-Bold.woff") format("woff"), url("../fonts/MicrosoftNewTaiLue-Bold.ttf") format("truetype"), url("../fonts/MicrosoftNewTaiLue-Bold.svg#MicrosoftNewTaiLue-Bold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MicrosoftNewTaiLue';
+  src: url("../fonts/MicrosoftNewTaiLue.eot?#iefix") format("embedded-opentype"), url("../fonts/MicrosoftNewTaiLue.woff") format("woff"), url("../fonts/MicrosoftNewTaiLue.ttf") format("truetype"), url("../fonts/MicrosoftNewTaiLue.svg#MicrosoftNewTaiLue") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Constantia';
+  src: url("../fonts/Constantia.eot?#iefix") format("embedded-opentype"), url("../fonts/Constantia.woff") format("woff"), url("../fonts/Constantia.ttf") format("truetype"), url("../fonts/Constantia.svg#Constantia") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Slider */
+/* Slider */
+html, body {
+  margin: 0 !important;
+  height: 100%;
+}
+
+header .links {
+  height: 77px;
+  position: relative;
+  left: 68.6%;
+  padding-top: 29px;
+}
+
+header .links a {
+  text-decoration: none;
+  font-size: 13px;
+}
+
+header .links .sign {
+  color: #fafcfd;
+  font-family: MicrosoftPhagsPa;
+}
+
+header .links .sign img {
+  margin-left: 10px;
+}
+
+header .links .sign i {
+  font-size: 19px;
+  padding-left: 3px;
+}
+
+header .links .search {
+  color: #fafcfd;
+  font-family: MicrosoftPhagsPa;
+  margin-left: 10px;
+}
+
+header .links .search i {
+  font-size: 19px;
+}
+
+header .all {
+  height: 140px;
+  position: relative;
+}
+
+header .all:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+header .all .block-left {
+  background: #0a2c4b;
+  height: 100%;
+  width: 40.73%;
+  float: left;
+  text-align: center;
+}
+
+header .all .block-left img {
+  position: relative;
+  max-width: 100%;
+  max-height: 100%;
+  left: 15%;
+  top: 16px;
+}
+
+header .all .center-image-block {
+  display: none;
+}
+
+header .all .block-right {
+  width: 59.27%;
+  height: 100%;
+  float: right;
+  background-image: url(../images/header-image.png);
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  padding: 0 0 0 15px;
+}
+
+header .all .block-right ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+header .all .block-right ul li {
+  float: left;
+}
+
+header .all .block-right ul li a {
+  display: inline-block;
+  color: #606060;
+  font-family: MicrosoftPhagsPa-Bold;
+  font-size: 22px;
+  text-align: center;
+  text-decoration: none;
+  padding: 70px 70px 38px 70px;
+}
+
+section .background-block {
+  width: 100%;
+  height: 890px;
+  background-image: url("../images/Header-background.png");
+  background-size: 100% 100%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+section .header-content {
+  margin: 0 auto;
+  text-align: center;
+  background: rgba(10, 44, 75, 0.4);
+  width: 49.5%;
+  height: 180px;
+  margin-top: 12%;
+  padding-top: 40px;
+}
+
+section .header-content h1 {
+  font-family: MicrosoftNewTaiLue-Bold;
+  font-size: 60px;
+  color: #fcfdfd;
+}
+
+section .header-content p {
+  font-family: Arial;
+  font-size: 25px;
+  color: #e5e5e5;
+  padding-top: 20px;
+}
+
+section button {
+  width: 237px;
+  height: 65px;
+  background: #fda220;
+  border: 1px solid #fda220;
+  border-radius: 10px;
+  position: relative;
+  left: 44.3%;
+  top: 14px;
+  font-family: Arial;
+  font-size: 25px;
+  color: #fdfcfc;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+section .block-welcome {
+  margin-top: 10.5%;
+  height: 670px;
+}
+
+section .block-welcome div {
+  float: left;
+}
+
+section .block-welcome .content-welcome {
+  position: relative;
+  background-image: url("../images/Welcome-grey.png");
+  width: 61.5%;
+  height: 100%;
+}
+
+section .block-welcome .content-welcome .welcome-text-block {
+  margin-left: 27.3%;
+}
+
+section .block-welcome .content-welcome .welcome-text-block h2 {
+  font-size: 86px;
+  font-family: MicrosoftNewTaiLue-Bold;
+  color: #5a5959;
+  padding-top: 70px;
+}
+
+section .block-welcome .content-welcome .welcome-text-block h2 img {
+  position: absolute;
+  z-index: -1;
+  top: 11.1%;
+  left: 26.5%;
+  height: 61px;
+}
+
+section .block-welcome .content-welcome .welcome-text-block h3 {
+  font-size: 40px;
+  font-family: MicrosoftPhagsPa-Bold;
+  color: #838282;
+  border-bottom: 4px solid #ebebeb;
+  width: 570px;
+  padding: 0 0 20px 25px;
+}
+
+section .block-welcome .content-welcome .welcome-text-block h4 {
+  font-size: 30.43px;
+  font-family: MicrosoftPhagsPa;
+  color: #838282;
+  padding: 20px 0 30px 25px;
+}
+
+section .block-welcome .content-welcome .welcome-text-block h4 span {
+  color: #fda220;
+}
+
+section .block-welcome .content-welcome .welcome-text-block p {
+  font-family: MicrosoftPhagsPa;
+  font-size: 25px;
+  color: #b7b6b6;
+  width: 65.6%;
+  line-height: 1.3;
+  padding-left: 25px;
+}
+
+section .block-welcome .img-welcome {
+  padding-top: 43px;
+}
+
+section .block-welcome .img-welcome img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+section .block-info {
+  width: 100%;
+  height: 455px;
+  background: #daedfe;
+  padding-left: 16.8%;
+  box-shadow: 0px 4px 10px lightgray;
+  z-index: 1;
+  position: relative;
+}
+
+section .block-info .info-img {
+  float: left;
+}
+
+section .block-info .info-img img {
+  max-width: 100%;
+  max-height: 100%;
+  margin-top: 33px;
+  border: 5px solid #ffffff;
+}
+
+section .block-info .info-content {
+  float: left;
+  width: 51.6%;
+  margin: 54px 0 0 86px;
+  height: 100%;
+}
+
+section .block-info .info-content h2 {
+  font-family: MicrosoftNewTaiLue;
+  font-size: 50px;
+  color: #3d3c3c;
+  margin-left: 36%;
+  letter-spacing: 9px;
+}
+
+section .block-info .info-content p {
+  font-family: Constantia;
+  font-size: 24px;
+  color: #767676;
+  font-weight: 500;
+  padding-top: 23px;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+section .block-info .info-content button {
+  width: 166px;
+  height: 66px;
+  background: #0a2c4b;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 26px;
+  margin-left: 35.5%;
+  margin-bottom: 60px;
+}
+
+section .block-courses {
+  width: 100%;
+  height: 600px;
+  background-image: url("../images/background.jpg");
+  position: relative;
+}
+
+section .block-courses a {
+  text-decoration: none;
+  font-size: 40px;
+  font-family: MicrosoftNewTaiLue-Bold;
+  color: #344046;
+  position: absolute;
+  left: 16.6%;
+  top: 16.6%;
+  cursor: pointer;
+}
+
+section .block-courses .hide-block {
+  width: 100%;
+  height: 200px;
+  background: rgba(235, 235, 235, 0.6);
+  position: relative;
+  top: 170px;
+  display: none;
+}
+
+section .block-courses .hide-block .hide-block-content div {
+  width: 415px;
+  height: 128px;
+  position: relative;
+  float: left;
+  background: #344046;
+  bottom: 17px;
+  margin-left: 15px;
+}
+
+section .block-courses .hide-block .hide-block-content div p {
+  position: absolute;
+  top: 28px;
+  left: 29%;
+  font-family: Arial;
+  color: #e5e5e5;
+}
+
+section .block-courses .hide-block .hide-block-content div h3 {
+  position: absolute;
+  top: 64px;
+  left: 29%;
+  font-family: Arial;
+  font-size: 29px;
+  color: #e5e5e5;
+}
+
+section .block-courses .hide-block .hide-block-content div h3 span {
+  background: #53fd77;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  font-size: 14px;
+  color: #fffefe;
+  font-family: MicrosoftPhagsPa;
+  padding: 0px 12px;
+  margin-left: 30px;
+}
+
+section .block-courses .hide-block .hide-block-content div img {
+  top: 26px;
+  left: 35px;
+  position: relative;
+}
+
+section .block-courses .hide-block .hide-block-content div a {
+  display: inline-block;
+  position: absolute;
+  width: 59px;
+  height: 100%;
+  background: #0a2c4b;
+  color: #fcfcfb;
+  left: 86%;
+  top: 0px;
+}
+
+section .block-courses .hide-block .hide-block-content div a i {
+  margin: 21px 0 0 17px;
+}
+
+section .block-courses .hide-block .hide-block-content .video {
+  margin-left: 16.8%;
+}
+
+section .block-courses .hide-block .hide-block-content .video span {
+  margin-left: 50px;
+}
+
+section .block-courses .courses-button {
+  position: relative;
+  top: 190px;
+}
+
+section .block-courses .courses-button button {
+  position: absolute;
+  z-index: 10;
+}
+
+footer {
+  width: 100%;
+  height: 72px;
+  background: #0a2c4b;
+  text-align: center;
+}
+
+footer .footer-links {
+  position: relative;
+  top: 20px;
+}
+
+footer .footer-links a {
+  text-decoration: none;
+  font-family: MicrosoftPhagsPa;
+  font-size: 14px;
+  color: #fdfcfc;
+  border-left: 1px solid #fdfcfc;
+  padding: 0 5px;
+}
+
+footer .footer-links .no-border {
+  border: none;
+}
+
+footer p {
+  font-family: MicrosoftPhagsPa;
+  font-size: 12px;
+  color: #b7b6b6;
+  margin-top: 30px;
+}
+
+/*
+* Ie fixes
+*/
